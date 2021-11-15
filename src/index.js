@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 const config = require("../lib/config.json");
 const intents = new Discord.Intents(32767);
 const client = new Discord.Client(({ intents: [Intents.FLAGS.GUILDS] }));
+//imports
+
 
 client.once('ready', () => {
     console.log('Ready!');
