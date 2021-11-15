@@ -7,7 +7,7 @@ client.once('ready', () => {
 });
 
 client.on("messageCreate", (message) => {
-    if (message.bot) return;
+    if (message.user.bot) return;
   
     if (message.content.toLowerCase().startsWith("!ping")) return message.channel.send({ content: "Pong!" });
   })
